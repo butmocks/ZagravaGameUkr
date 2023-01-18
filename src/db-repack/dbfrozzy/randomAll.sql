@@ -1,0 +1,4 @@
+SELECT * 
+FROM alltasks
+LIMIT 1 
+OFFSET ABS(RANDOM()) % MAX((SELECT COUNT(*) FROM alltasks), 1)
