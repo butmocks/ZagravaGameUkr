@@ -2,7 +2,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const webpack = require('webpack');
-const sqlite3 = require('sqlite3').verbose();
 
 module.exports = (env, argv) => {
   const isProduction = argv.mode === 'production';

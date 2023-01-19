@@ -14,7 +14,7 @@ class TextTask extends React.Component {
   // taskId = (Math.floor(Math.random() * 50))
 
   fetchTask = () => {
-    fetch(`http://localhost:2999/red/${Math.floor(Math.random() * 200)}`)
+    fetch(`http://localhost:3000/red/${Math.floor(Math.random() * 200)}`)
       // fetch(`http://localhost:2999/red/176`)
       .then(response => response.json())
       .then(taskData => {

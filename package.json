@@ -31,8 +31,9 @@
     "webpack-dev-server": "^4.11.1"
   },
   "scripts": {
-    "start": "react-scripts start & npm run serve ",
-    "build": "npm run serve & react-scripts build",
+    "start": "npm run start-dev & npm run serve",
+    "start-dev": "webpack serve --mode=development --devtool source-map",
+    "build": "webpack --mode=production & npm run serve & react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "serve": "json-server --watch db.json"
