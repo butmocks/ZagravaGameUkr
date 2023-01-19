@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link, useState } from 'react-router-dom';
+import './task.scss';
 
 class GameTask extends React.Component {
   render() {
@@ -7,13 +8,16 @@ class GameTask extends React.Component {
     if (!taskData) {
       return null;
     }
-    const { img, task, level, id, active } = taskData;
+    const { img1, img2, img3, task, level, id, active } = taskData;
+
     return (
       <div>
         <h2 className="">Завдання №{id}</h2>
-        <img src="" alt="pic">
-          {'../../db-repack/img/ {img}'}
-        </img>
+        <div>
+          <img src={img1} className="img_position" alt="" />
+          <img src={img2} className="img_position" alt="" />
+          <img src={img3} className="img_position" alt="" />
+        </div>
 
         <div className="text">{task}</div>
 

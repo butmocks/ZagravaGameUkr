@@ -10,11 +10,12 @@ class TextTask extends React.Component {
   componentDidMount() {
     this.fetchTask(this.props.task);
   }
-
+  // let level = <ColorGameType />
   // taskId = (Math.floor(Math.random() * 50))
 
   fetchTask = () => {
     fetch(`http://localhost:2999/red/${Math.floor(Math.random() * 200)}`)
+      // fetch(`http://localhost:2999/red/176`)
       .then(response => response.json())
       .then(taskData => {
         this.setState({
@@ -31,12 +32,12 @@ class TextTask extends React.Component {
       Далі
       </button> */}
         <div>
-          <Link className="a" to="/texttask">
+          <Link className="" to="/texttask">
             Наступне
           </Link>
         </div>
         <div>
-          <Link className="a" to="/texttask">
+          <Link className="" to="/texttask">
             Назад
           </Link>
         </div>

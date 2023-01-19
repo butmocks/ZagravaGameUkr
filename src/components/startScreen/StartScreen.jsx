@@ -10,9 +10,6 @@ function StartScreen() {
       <h1 className="text-logo">Заграва</h1>
       <img src={logo} className="logo" alt="logo" />
       <p>Ну дуже цікава гра</p>
-      <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-        Learn React
-      </a>
 
       <Link className="a" to="/info">
         Далі
